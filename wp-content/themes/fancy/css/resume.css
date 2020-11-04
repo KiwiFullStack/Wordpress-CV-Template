@@ -12,6 +12,24 @@ body {
   color: #868e96;
 }
 
+.sub-menu {
+  padding: 0;
+}
+
+.btn-search {
+  color: #fff;
+  background-color: #495057;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  border-radius: 0;
+}
+
+.sub-menu .nav-link {
+  font-weight: 500 !important;
+  font-size: 0.8rem !important;
+  text-transform: capitalize !important;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
