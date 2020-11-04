@@ -1,5 +1,14 @@
 <?php
 
+function enqueue_function(){
+
+
+ wp_enqueue_style('bootstrap',get_template_directory_uri().'/vendor/bootstrap/css/bootstrap.min.css');
+
+}
+add_action( 'wp_enqueue_scripts','enqueue_function' );
+
+
 function register_resources(){
 	//register a menu
     register_nav_menu('main-menu','Main Menu');
@@ -103,5 +112,3 @@ function section_func( $atts ){
 
 }
 add_shortcode( 'section', 'section_func' );
-
-?>
