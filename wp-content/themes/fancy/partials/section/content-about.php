@@ -1,4 +1,10 @@
-<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+<?php
+
+$name = get_post_field('post_name')
+
+?>
+
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="<?php echo $name ?>">
         <div class="my-auto">
           <h1 class="mb-0"><?php the_field('firstname')?>
             <span class="text-primary"><?php the_field('lastname')?></span>
