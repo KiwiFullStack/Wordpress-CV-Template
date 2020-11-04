@@ -59,7 +59,7 @@
 
     <form>
 
-      <div class="form-group" method="get" action="<?php echo home_url('/') ?>">
+      <div class="form-group" class="mx-auto" method="get" action="<?php echo home_url('/') ?>">
         <input type="text" class="form-control" name="s" id="keywords" placeholder="Enter keywords">
       </div>
       <button type="submit" class="btn btn-search btn-lg btn-block">Search</button>
