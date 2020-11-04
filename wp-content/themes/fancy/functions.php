@@ -1,10 +1,11 @@
 <?php
 
 function enqueue_function(){
-
-
  wp_enqueue_style('bootstrap',get_template_directory_uri().'/vendor/bootstrap/css/bootstrap.min.css');
-
+ wp_enqueue_style('font1','https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700');
+ wp_enqueue_style('font2','https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i');
+ wp_enqueue_style('fontawesome',get_template_directory_uri().'/vendor/fontawesome-free/css/all.min.css');
+ wp_enqueue_style('resume',get_template_directory_uri().'/css/resume.min.css');
 }
 add_action( 'wp_enqueue_scripts','enqueue_function' );
 
